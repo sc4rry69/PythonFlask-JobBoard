@@ -4,11 +4,6 @@ from flask import Flask, render_template, g
 
 PATH = ('db/jobs.sqlite')
 
-engine = create_engine('sqlite:///jobs.db')
-Base.metadata.bind = engine
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
-
 def open_connection():
 	connection = getattr(g, _connection, None)
 	if connection == None:
