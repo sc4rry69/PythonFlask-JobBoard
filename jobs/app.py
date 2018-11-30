@@ -1,5 +1,6 @@
 #!/venv/bin/python3
 from flask import Flask, render_template, g
+from sqlalchemy import create_engine
 
 PATH = ('/db/jobs.sqlite')
 
