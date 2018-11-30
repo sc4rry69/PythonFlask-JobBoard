@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"restaurant"
+			],
+			[
+				"id",
+				"id_number"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"me",
+				"messagecontent"
+			],
+			[
+				"new",
+				"newRestaurantName"
+			],
+			[
+				"send",
+				"send_header"
+			],
+			[
+				"end",
+				"end_headers"
+			],
+			[
+				"c",
+				"c"
+			],
+			[
+				"db",
+				"db"
+			],
+			[
+				"que",
+				"question_3"
+			],
+			[
+				"qu",
+				"question_2"
+			],
+			[
+				"__",
+				"__main__"
+			],
+			[
+				"DB",
+				"DBNAME"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"fo",
+				"forum"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"p",
+				"psycopg2"
+			],
+			[
+				"pa",
+				"parse_qs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/fullstack/Desktop/pluralsight"
+	],
+	"file_history":
+	[
+		"/Users/fullstack/Desktop/webserver.py",
+		"/Users/fullstack/Desktop/L2O1Answer.py",
+		"/Users/fullstack/Desktop/L2O2Answer.py",
+		"/Users/fullstack/Desktop/L2O3Answer.py",
+		"/Users/fullstack/Desktop/L2O4Answer",
+		"/Users/fullstack/Desktop/lesson 4/fullstack/vagrant/lesson4/webserver.py",
+		"/Users/fullstack/Desktop/lesson 4/fullstack/vagrant/lesson4/lotsofmenus.py",
+		"/Users/fullstack/Desktop/lesson 4/fullstack/vagrant/lesson4/database_setup.py",
+		"/Users/fullstack/Desktop/database_setup.py",
+		"/Users/fullstack/Desktop/hello udacity wsgi",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/newsserver.py",
+		"/Users/fullstack/Desktop/play.py",
+		"/Users/fullstack/Library/Mobile Documents/com~apple~CloudDocs/Udacity Full Stack/Udacity Projects/project1/newsserver.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/README.md",
+		"/Users/fullstack/Desktop/README.md",
+		"/Users/fullstack/Desktop/Project1.md",
+		"/Users/fullstack/Desktop/project 1 answers.txt",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/forum/forum.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/news.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/newsdb.py",
+		"/Users/fullstack/Desktop/udacity-git-course/course-ud303/Lesson-2/0_HelloServer/HelloServer.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/forum/solution/forum.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/forum/forumdb.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/forumdb.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/news/forum.py",
+		"/Users/fullstack/Desktop/vagrant/FSND-Virtual-Machine/vagrant/forum/solution/forumdb_stepone.py",
+		"/Users/fullstack/Desktop/play.html",
+		"/Users/fullstack/Desktop/udacity-git-course/course-ud303/Lesson-2/3_MessageboardPartOne/MessageboardPartOne.py",
+		"/Users/fullstack/Desktop/udacity-git-course/course-ud303/Lesson-2/3_MessageboardPartOne/Messageboard.html",
+		"/Users/fullstack/Desktop/udacity-git-course/course-ud303/Lesson-2/1_EchoServer/EchoServer.py",
+		"/Users/fullstack/Desktop/udacity-git-course/course-ud303/Lesson-2/2_HTMLForms/PostForm.html",
+		"/Users/fullstack/Desktop/udacity-git-course/course-collaboration-travel-plans/index.html",
+		"/Users/fullstack/Desktop/udacity-git-course/course-collaboration-travel-plans/.git/COMMIT_EDITMSG",
+		"/Users/fullstack/Desktop/udacity-git-course/my-travel-plans/app.css",
+		"/Users/fullstack/Desktop/udacity-git-course/my-travel-plans/index.html",
+		"/Users/fullstack/Desktop/udacity-git-course/my-travel-plans/README.md",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/.git/COMMIT_EDITMSG",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/index.html",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/.git/MERGE_MSG",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/css/app.css",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/.git/TAG_EDITMSG",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/app.css",
+		"/Users/fullstack/Desktop/udacity-git-course/new-git-project/app.js",
+		"/Users/fullstack/Desktop/udacity-git-course/course-git-blog-project/index.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"myRest",
+			".first",
+			"myRes",
+			"restaurant.",
+			"id_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/fullstack/Desktop/pluralsight"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
