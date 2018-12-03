@@ -1,4 +1,4 @@
-{% extends layout.html %}
+{% extends "layout.html" %}
 {% block content %}
 <div>
 	<h1>{{ employer['name'] }}</h1>
@@ -22,6 +22,12 @@
         </div>
         <div class="media-content">
           <div class="content">
+          	<p>
+          		<strong>review['title']</strong>)
+          		<small>review['status']</small>
+          		<small>review['date']</small>
+          		review
+          	</p>
           </div>
         </div>
       </article>
