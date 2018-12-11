@@ -116,23 +116,19 @@
 	"buffers":
 	[
 		{
-			"contents": "#!/venv/bin/python3\nimport sqlite3\nimport datetime\nfrom flask import Flask, render_template, g, request, redirect, url_for\n\nPATH = ('db/jobs.sqlite')\n\napp = Flask(__name__) \n\ndef open_connection():\n\tconnection = getattr(g, '_connection', None)\n\tif connection == None:\n\t\tconnection = g._connection = sqlite3.connect(PATH)\n\t\tconnection.row_factory = sqlite3.Row\n\t\treturn connection\n\ndef execute_sql(sql, values=(), commit=False, single=False):\n\tconnection = open_connection()\n\tcursor = connection.execute(sql, values)\n\tif commit == True:\n\t\tresults = connection.commit()\n\telse:\n\t\tresults = cursor.fetchone() if single else cursor.fetchall()\n\n\tcursor.close()\n\treturn results\n\n@app.teardown_appcontext\ndef close_connection(exception):\n\tconnection = getattr(g, '_connection', None)\n\tif connection is not None:\n\t\tconnection.close()\n\n\n@app.route('/')\n@app.route('/jobs')\ndef jobs():\n\tjobs = execute_sql('SELECT job.id, job.title, job.description, job.salary, employer.id as employer_id, employer.name as employer_name FROM job JOIN employer ON employer.id = job.employer_id')\n\texecute_sql = jobs()\n\treturn render_template('index.html', jobs=jobs)\n\n@app.route('/job/<job_id>')\ndef job(job_id):\n\tjob = execute_sql('SELECT job.id, job.title, job.description, job.salary, employer.id as employer_id, employer.name as employer_name FROM job JOIN employer ON employer.id = job.employer_id WHERE job.id = ?', [job_id], single=True)\n\treturn render_template('job.html', job=job)\n\n@app.route('/employer/<employer_id>')\ndef employer(employer_id):\n\temployer = execute_sql('SELECT * FROM employer WHERE id = ?', [employer_id], single=True)\n\tjobs = execute_sql('SELECT job.id, job.title, job.description, job.salary FROM job JOIN employer ON employer.id = job.employer_id WHERE employer.id = ?', [employer_id])\n\treviews = execute_sql('SELECT review, rating, title, date, status FROM review JOIN employer ON employer.id = review.employer_id WHERE employer.id = ?', [employer_id])\n\treturn render_template('employer.html', employer=employer, jobs=jobs, reviews=reviews)\n\n@app.route('/employer/<employer_id>/review', methods=('GET', 'POST'))\ndef review(employer_id):\n\tif request.method == 'POST':\n\t\treview = request.form['review']\n\t\trating = request.form['rating']\n\t\ttitle = request.form['title']\n\t\tstatus = request.form['status']\n\n\t\tdate = datetime.datetime.now().strftime(\"%m/%d/%Y\")\n\t\texecute_sql('INSERT INTO review (review, rating, title, date, status, employer_id) VALUES (?, ?, ?, ?, ?, ?)', (review, rating, title, date, status, employer_id), commit=True)\n\t\treturn redirect(url_for('employer', employer_id=employer_id))\n\treturn render_template('review.html', employer_id=employer_id)\n\t\n\t\n",
 			"file": "jobs/app.py",
-			"file_size": 2670,
-			"file_write_time": 131885383166583518,
 			"settings":
 			{
-				"buffer_size": 2670,
+				"buffer_size": 2660,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "tasks.md",
+			"file": "jobs/templates/_macros.html",
 			"settings":
 			{
-				"buffer_size": 21255,
-				"encoding": "UTF-8",
+				"buffer_size": 698,
 				"line_ending": "Unix"
 			}
 		}
@@ -170,12 +166,15 @@
 	"expanded_folders":
 	[
 		"/Users/fullstack/Desktop/pluralsight",
-		"/Users/fullstack/Desktop/pluralsight/jobs"
+		"/Users/fullstack/Desktop/pluralsight/__pycache__",
+		"/Users/fullstack/Desktop/pluralsight/jobs",
+		"/Users/fullstack/Desktop/pluralsight/jobs/templates"
 	],
 	"file_history":
 	[
-		"/Users/fullstack/Desktop/pluralsight/jobs/templates/review.html",
+		"/Users/fullstack/Desktop/pluralsight/app.py",
 		"/Users/fullstack/Desktop/pluralsight/jobs/app.py",
+		"/Users/fullstack/Desktop/pluralsight/jobs/templates/review.html",
 		"/Users/fullstack/Desktop/pluralsight/jobs/templates/_macros.html",
 		"/Users/fullstack/Desktop/pluralsight/jobs/templates/employer.html",
 		"/Users/fullstack/Desktop/webserver.py",
@@ -268,7 +267,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -277,37 +276,36 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2670,
+						"buffer_size": 2660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								441,
-								441
+								2059,
+								2059
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 26.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tasks.md",
+					"file": "jobs/templates/_macros.html",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 21255,
+						"buffer_size": 698,
 						"regions":
 						{
 						},
@@ -320,13 +318,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
